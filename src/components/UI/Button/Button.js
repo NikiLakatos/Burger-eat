@@ -1,10 +1,11 @@
-import React from 'react'
-import styled from './Button.module.css'
+import React from 'react';
+
+import styled from './Button.module.css';
 
 const button = (props) => (
-
-<button onClick={props.clickedSomeAction}
-        className={[styled.Button, styled[props.btnType]].join(' ')}>{props.children}</button>
+    <button
+        className={[styled.Button, styled[props.btnType]].join(' ')}
+        onClick={props.clicked}>{props.children}</button>
 );
 
 export default button;
